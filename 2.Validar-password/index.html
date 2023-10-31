@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validación de Contraseña</title>
+</head>
+<body>
+    <div class="texto" id="texto"></div>
+    <div class="cuadro">
+        <a href="../index.html">Inicio</a>
+
+        <h1>Validación de Contraseña</h1>
+        <div id="container">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password">
+            <div id="requirements">
+                <p id="length">Debe tener al menos 8 caracteres</p>
+                <p id="uppercase">Debe contener al menos una letra mayúscula</p>
+                <p id="number">Debe contener al menos un número</p>
+                <p id="whitespace">No puede contener espacios en blanco</p>
+            </div>
+            <button onclick="validar()">Validar</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
